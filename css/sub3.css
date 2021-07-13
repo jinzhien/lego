@@ -1,0 +1,135 @@
+/* 제품리스트 */
+ul.new_prod{
+    display: table;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+}
+.new_prod>li{
+    width: 25%;
+    display: inline-block;
+    margin: 0 0 60px;
+    color: #757575;
+    vertical-align: top;
+    position: relative;
+}
+.new_prod>li .box {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.new_prod .thumbnail {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+.new_prod .thumbnail .new_btn{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.new_prod .thumbnail .icon_cart a{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 8;
+    background: url(/lego/images/2_best/best_cart_off.png) no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+.new_prod .thumbnail .prod_img{
+    overflow: hidden;
+}
+.new_prod .thumbnail .prod_img img{
+    width: 100%;
+    border: 0;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+
+/* 베스트 제품 정보 */
+.new_prod .description {
+    margin: 0 auto;
+    padding: 25px 6px;
+    text-align: left;
+    position: relative;
+}
+.new_prod .description .name a{
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #3a3a3a;
+    margin-bottom: 8px;
+}
+.new_prod .description li{
+    margin-bottom: 8px;
+    text-align: left;
+}
+.new_prod .description li.hashtag{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    font-size: 12px;
+    color: #12b0e0;
+}
+.new_prod .description li.price{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3a3a3a;
+    text-decoration: none;
+}
+.new_prod .description li.cost{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 3px;
+    color: #999;
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 400;
+}
+.new_prod .description li.sale{
+    display: inline-block;
+    font-size: 18px;
+    color: #ff3d44;
+    padding-left: 3px;
+    font-weight: 400;
+}
+
+/* 베스트 마우스오버 */
+.thumbnail:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: block;
+    background-color: rgba(0,0,0,.2);
+}
+.thumbnail:hover .prod_img img{
+    transform: scale(1.2);
+}
+.new_prod .thumbnail .icon_cart a:hover {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 8;
+    background: url(/lego/images/2_best/best_cart_on.png) no-repeat;
+    width: 85px;
+    height: 38px;
+    transition: all 0.2s;
+}
+

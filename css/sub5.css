@@ -1,0 +1,45 @@
+.faq_title ul.sub_title li{
+    margin: 0 35px;
+}
+.faq_title ul.sub_title li.on a{
+    font-size: 18px;
+}
+.faq_title ul.sub_title li a{
+    font-size: 18px;
+}
+.faq>div{
+    display: none;
+}
+.faq>div.on{
+    width: 100%;
+    margin: 20px auto 80px;
+    border-top: 1px solid #3a3a3a;
+    position: relative;
+    display: block;
+}
+.faq>div>ul{
+    margin: 0 auto 10px;
+}
+.faq>div>ul>li{
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.faq>div>ul>li>a{
+    font-size: 18px;
+    color: #3a3a3a;
+    padding: 30px 0;
+    background: url(/lego/images/sub/menu_arrow.png) no-repeat 97% center;
+    display: block;
+    box-sizing: border-box;
+}
+.faq>div>ul>li>a>span{
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+

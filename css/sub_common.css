@@ -1,0 +1,159 @@
+/* 플롯해제 공통 */
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* 전체 */
+/* #wrap{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+} */
+
+/* 서브 헤더 */
+.sub .header_wrap{
+    background-color: #fff;
+    border-bottom: 1px solid #efefef;
+}
+.sub ul.depth1 li>a{  
+    color: #1a1a1a;   
+}
+.sub #gnb ul.gnb_icon li a .login_bk{
+    position: absolute;
+    top: 50px; right: 120px;
+}
+.sub #gnb ul.gnb_icon li a .login_wh{
+    display: none;
+    position: absolute;
+    top: 50px; right: 120px;
+}
+.sub #gnb ul.gnb_icon li a .cart_bk{
+    position: absolute;
+    top: 50px; right: 60px;
+}
+.sub #gnb ul.gnb_icon li a .cart_wh{
+    display: none;
+    position: absolute;
+    top: 50px; right: 60px;
+}
+.sub #gnb ul.gnb_icon li a .search_bk{
+    position: absolute;
+    top: 50px; right: 0;
+}
+.sub #gnb ul.gnb_icon li a .search_wh{
+    display: none;
+    position: absolute;
+    top: 50px; right: 0;
+}
+
+
+
+/* footer */
+#footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    border-top: 1px solid #efefef;
+    z-index: 10;
+}
+
+/* 푸터 상단 */
+.footer_top{
+    border-bottom: 1px solid #efefef;
+}
+.width1280{
+    width: 1280px;
+    height: 110px;
+    margin: 0 auto;
+    position: relative;
+}
+.top_btn{
+    position: absolute;
+    top: -53px; right: 0;
+}
+.top_btn a img{
+    display: block;
+}
+
+.footer_left{
+    float: left;
+    width: 77%;
+    height: 110px;
+}
+.footer_left>li{
+    float: left;
+    height: 110px;
+    line-height: 110px;
+    margin-right: 50px;
+}
+.footer_left>li:nth-child(5){
+    float: left;
+    height: 110px;
+    line-height: 110px;
+    margin-right: 40px;
+}
+.footer_left>li>a{
+    display: block;
+    font-size: 16px;
+}
+.footer_left>li:nth-child(1)>a{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+}
+
+
+/* 푸터 sns */
+.footer_right{
+    float: right;
+    width: 23%;
+    height: 110px;
+    position: relative;
+}
+.footer_right li{
+    float: left;
+}
+.footer_right li a{
+    display: block;
+    padding: 35px 0 36px 20px;
+    position: relative;
+    right: -25px;
+}
+.footer_right li img{
+    width: 34px;
+    height: 34px;
+}
+
+/* 푸터 하단 */
+.footer_bottom{
+    width: 1280px;
+    margin: 50px auto 0;
+    height: 120px;
+}
+h1{
+    float: left;
+    width: 8%;
+}
+h1 img{
+    width: 60px;
+    height: 60px;
+}
+.bottom_right{
+    float: left;
+    width: 92%;
+}
+.bottom_right{
+    font-size: 14px;
+    color: #666;
+}
+.bottom_right p:nth-child(3){
+    margin-top: 20px;
+}
+
+
+/* 푸터 마우스오버 */
+.footer_left>li:hover>a{
+    color: #12b0e0;
+}

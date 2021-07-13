@@ -1,0 +1,190 @@
+/* 왼쪽 메뉴 */
+.con_left{
+    width: 190px;
+    float: left;
+    margin-left: 10px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 30px 0 20px 0;
+    margin-top: 15px;
+}
+.title a{
+    color: #000;
+}
+.category ul{
+    margin-top: 30px;
+}
+.category ul li{
+    background: url(/lego/images/sub/menu_arrow.png) no-repeat right center;
+    padding: 10px 0 10px 0;
+}
+.category ul li a{
+    font-size: 18px;
+    color: #3a3a3a;
+}
+.category ul li.on a{
+    display: block;
+    font-weight: 500;
+}
+.category ul li.on a::after{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ff3d44;
+    margin-left: 4px;
+}
+
+/* 오른쪽 */
+.con_bottom{
+    width: 100%;
+    margin: 10px auto;
+}
+.con_right{
+    width: 953px;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+.btn_top{
+    width: 100%;
+    height: 45px;
+    margin-top: 50px;
+}
+.filter{
+    float: left;
+}
+.filter a{
+    display: block;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    width: 120px;
+    padding: 0 15px;
+    margin-left: 10px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    color: #3a3a3a;
+    background-color: #fff;
+    background: url(/lego/images/sub/icon_filter.png) no-repeat 120px center;
+}
+.list{
+    float: right;
+}
+.list a{
+    display: block;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    width: 100px;
+    padding: 0 15px;
+    margin-right: 10px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    color: #3a3a3a;
+    background-color: #fff;
+    background: url(/lego/images/sub/menu_arrow.png) no-repeat 105px center;
+}
+/* 제품리스트 */
+.prod_list{
+    width: 100%;
+    margin: 40px auto 0;
+}
+.prod_list>ul{
+    display: none;
+}
+.prod_list>ul.on{
+    display: table;
+    width: 100%;
+    min-width: 100%;
+    font-size: 0;
+    position: relative;
+}
+.prod_list>ul>li{
+    width: 33.333%;
+    display: inline-block;
+    margin: 0 0 60px;
+    color: #757575;
+    vertical-align: top;
+    position: relative;
+}
+.prod_list>ul>li .box {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.prod_list>ul .thumbnail {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+.prod_list>ul .thumbnail .new_btn{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.prod_list>ul .thumbnail .num{
+    position: absolute;
+    top: -1px;
+    right: -2px;    
+    width: 66px;
+    height: 63px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #3a3a3a;
+    z-index: 1;
+    text-align: center;
+    padding-top: 10px;
+    background: url(/lego/images/2_best/best_num_bg.png) no-repeat;
+}
+.prod_list>ul .thumbnail .icon_cart a{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 8;
+    background: url(/lego/images/2_best/best_cart_off.png) no-repeat;
+    width: 38px;
+    height: 38px;
+}
+.prod_list>ul .thumbnail .prod_img{
+    overflow: hidden;
+}
+.prod_list>ul .thumbnail .prod_img img{
+    width: 100%;
+    border: 0;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+/* 마우스오버 */
+.prod_list>ul .thumbnail:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: block;
+    background-color: rgba(0,0,0,.2);
+}
+.prod_list>ul .thumbnail:hover .prod_img img{
+    transform: scale(1.2);
+}
+.prod_list>ul .thumbnail .icon_cart a:hover {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 8;
+    background: url(/lego/images/2_best/best_cart_on.png) no-repeat;
+    width: 85px;
+    height: 38px;
+    transition: all 0.2s;
+}
+
+
+

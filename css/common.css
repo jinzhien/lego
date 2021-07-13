@@ -1,0 +1,559 @@
+/* 플롯해제 공통 */
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* 전체 */
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+/* 헤더 */
+.header_wrap{
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    transition: all 0.5s;
+}
+#header{
+    width: 1280px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 헤더 로고 */
+#header h1{
+    position: absolute;
+    top: 0; left: 0;
+    margin-top: 35px;
+    z-index: 20;
+}
+#header h1 a img{
+    width: 100px;
+    height: 52px;
+}
+#header .top_menu{
+    position: absolute;
+    top: 0; right: 0;
+    z-index: 20;
+}
+/* 헤더 gnb */
+nav#gnb{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+ul.depth1{
+    float: left;
+    width: 70%;
+    position: absolute;
+    top: 20px; left: 200px;
+}
+ul.depth1::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ul.depth1>li{
+    float: left;
+    position: relative;
+}
+ul.depth1 li>a{
+    display: block;
+    font-size: 18px; 
+    color: #fff;
+    padding: 30px 40px;
+    position: relative;
+}
+/* 헤더 lnb */
+ul.depth2{
+    position: absolute;
+    top: 100px; left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #efefef;
+    transition: all 0.5s; 
+    visibility: hidden;
+    opacity: 0; 
+    min-height: 0;
+}
+ul.depth2>li>a{
+    display: block;
+    font-size: 15px ;
+    color: #3a3a3a;
+    padding: 15px 10px;
+    text-align: center;
+}
+ /* 헤더 아이콘 */
+#gnb ul.gnb_icon{
+    float: right;
+    width: 30%;
+}
+#gnb ul.gnb_icon li{
+    float: left;
+}
+#gnb ul.gnb_icon li a{
+    display: block;
+    padding-left: 20px;
+}
+#gnb ul.gnb_icon li a .login_bk{
+    display: none;
+    position: absolute;
+    top: 50px; right: 120px;
+}
+#gnb ul.gnb_icon li a .login_wh{
+    position: absolute;
+    top: 50px; right: 120px;
+}
+#gnb ul.gnb_icon li a .cart_bk{
+    display: none;
+    position: absolute;
+    top: 50px; right: 60px;
+}
+#gnb ul.gnb_icon li a .cart_wh{
+    position: absolute;
+    top: 50px; right: 60px;
+}
+#gnb ul.gnb_icon li a .search_bk{
+    display: none;
+    position: absolute;
+    top: 50px; right: 0;
+}
+#gnb ul.gnb_icon li a .search_wh{
+    position: absolute;
+    top: 50px; right: 0;
+}
+#gnb ul.gnb_icon li a.top_cart .count{
+    position: absolute;
+    top: 48px;
+    right: 52px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 21px; 
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: #ff3d44;
+    -webkit-border-radius: 50%;
+}
+/* 헤더 마우스오버 */
+ul.depth1 > li:hover >a{
+    color: #f7cb46;
+}
+ul.depth1 > li:hover >a::after{
+    content: '';
+    display: block; 
+    margin-top: 10px; 
+    border-bottom: 3px solid #f7cb46;
+    transition: all 0.5s ease-in-out;
+ }
+ ul.depth1 > li:hover > ul.depth2{
+     visibility: visible;
+     opacity: 1;
+     min-height: 120px;
+ }
+ ul.depth2 > li:hover a{
+     background-color: #f7cb46;
+     color: #fff;
+ }
+/*  헤더고정 */
+.header_wrap.on{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #efefef;
+}
+#gnb ul.depth1>li>a.on{
+    color: #1a1a1a;
+}
+#gnb ul.gnb_icon .login_bk.on{
+    display: block;
+}
+#gnb ul.gnb_icon .cart_bk.on{
+    display: block;
+}
+#gnb ul.gnb_icon .search_bk.on{
+    display: block;
+}
+#gnb ul.gnb_icon .login_wh.on{
+    display: none;
+}
+#gnb ul.gnb_icon .cart_wh.on{
+    display: none;
+}
+#gnb ul.gnb_icon .search_wh.on{
+    display: none;
+}
+#gnb ul.depth1>li:hover>a.on{
+    color: #f7cb46;
+}
+
+/* 서브 헤더 */
+.sub .header_wrap{
+    background-color: #fff;
+    border-bottom: 1px solid #efefef;
+}
+.sub ul.depth1 li>a{  
+    color: #1a1a1a;   
+}
+.sub #gnb ul.gnb_icon li a .login_bk{
+    display: block;
+    position: absolute;
+    top: 50px; right: 120px;
+}
+.sub #gnb ul.gnb_icon li a .login_wh{
+    display: none;
+    position: absolute;
+    top: 50px; right: 120px;
+}
+.sub #gnb ul.gnb_icon li a .cart_bk{
+    display: block;
+    position: absolute;
+    top: 50px; right: 60px;
+}
+.sub #gnb ul.gnb_icon li a .cart_wh{
+    display: none;
+    position: absolute;
+    top: 50px; right: 60px;
+}
+.sub #gnb ul.gnb_icon li a .search_bk{
+    display: block;
+    position: absolute;
+    top: 50px; right: 0;
+}
+.sub #gnb ul.gnb_icon li a .search_wh{
+    display: none;
+    position: absolute;
+    top: 50px; right: 0;
+}
+
+
+/* footer */
+#footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    border-top: 1px solid #efefef;
+    z-index: 10;
+}
+/* 푸터 상단 */
+.footer_top{
+    border-bottom: 1px solid #efefef;
+}
+.width1280{
+    width: 1280px;
+    height: 110px;
+    margin: 0 auto;
+    position: relative;
+}
+.top_btn{
+    position: absolute;
+    top: -53px; right: 0;
+}
+.top_btn a img{
+    display: block;
+}
+.footer_left{
+    float: left;
+    width: 77%;
+    height: 110px;
+}
+.footer_left>li{
+    float: left;
+    height: 110px;
+    line-height: 110px;
+    margin-right: 50px;
+}
+.footer_left>li:nth-child(5){
+    float: left;
+    height: 110px;
+    line-height: 110px;
+    margin-right: 40px;
+}
+.footer_left>li>a{
+    display: block;
+    font-size: 16px;
+}
+.footer_left>li:nth-child(1)>a{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+}
+/* 푸터 sns */
+.footer_right{
+    float: right;
+    width: 23%;
+    height: 110px;
+    position: relative;
+}
+.footer_right li{
+    float: left;
+}
+.footer_right li a{
+    display: block;
+    padding: 35px 0 36px 20px;
+    position: relative;
+    right: -25px;
+}
+.footer_right li img{
+    width: 34px;
+    height: 34px;
+}
+/* 푸터 하단 */
+.footer_bottom{
+    width: 1280px;
+    margin: 50px auto 0;
+    height: 120px;
+}
+.footer_bottom h1{
+    float: left;
+    width: 8%;
+}
+.footer_bottom h1 img{
+    width: 60px;
+    height: 60px;
+}
+.bottom_right{
+    float: left;
+    width: 92%;
+}
+.bottom_right{
+    font-size: 14px;
+    color: #666;
+}
+.bottom_right p:nth-child(3){
+    margin-top: 20px;
+}
+/* 푸터 마우스오버 */
+.footer_left>li:hover>a{
+    color: #12b0e0;
+}
+
+
+/* 서브 공통 */
+#sub_wrap{
+    width: 100%;
+    margin: 120px auto 100px;
+}
+.contents{
+    width: 100%;
+    max-width: 1280px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+.con_top{
+    margin: 0 auto;
+}
+.path{
+    padding: 30px 0;
+}
+.path ul{
+    float: right;
+}
+.path ul li{
+    float: left;
+    padding-left: 30px;
+}
+.path ul li a{
+    font-size: 16px;
+    color: #5a5a5a;
+}
+.path ul li:nth-child(2){
+    background: url(/lego/images/sub/page_arrow.png) no-repeat 11px 7px;
+}
+.banner{
+    margin: 0 auto;
+}
+
+
+/* 베스트 & 신제품 제품리스트 */
+.con_bottom{
+    width: 100%;
+    position: relative;
+}
+.prod_list{
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+
+/* 하단 페이지 버튼 */
+.btn_bottom{
+    display: flex;
+    justify-content: center;
+}
+.btn_bottom>a{
+    display: inline-block;
+    margin: 0 20px 0;
+}
+.btn_bottom ol li{
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 20px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+.btn_bottom ol li.on{
+    background-color: #ff3d44;
+    margin-left: 0;
+}
+.btn_bottom ol li.off{
+    background-color: #fff;
+}
+.btn_bottom ol li a{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+.btn_bottom ol li.on a{
+    color: #fff;
+}
+.btn_bottom ol li.off a{
+    color: #5a5a5a;    
+}
+.btn_bottom ol li.off:hover a{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+
+
+/* 이벤트 & faq - 타이틀, 게시판*/
+#sub_wrap h2{
+    padding: 0;
+    font: 40px 'TmoneyRoundWindExtraBold';
+    color: #3a3a3a;
+    text-align: center;
+    padding: 40px 0 50px;
+}
+ul.sub_title{
+    padding: 0;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+ul.sub_title li{
+    margin: 0 20px;
+    display: inline-flex;
+}
+ul.sub_title li.on a{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3a3a3a;
+    position: relative;
+    padding-bottom: 5px;
+}
+ul.sub_title li.on a::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff3d44;
+    transition: all 0.5s;
+}
+ul.sub_title li a{
+    font-size: 20px;
+    font-weight: 400;
+    color: #9a9a9a;
+}
+.form{
+    float: right;
+}
+.list{
+    float: left;
+}
+.list a{
+    display: block;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    width: 100px;
+    padding: 0 15px;
+    margin-right: 10px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #3a3a3a;
+    background-color: #fff;
+    background: url(../images/sub/menu_arrow.png) no-repeat 105px center;
+}
+input[type=text]{
+    height: 45px;
+    line-height: 45px;
+    background-color: #f5f5f5;
+    border: 0px;
+    border-radius: 8px;
+    text-indent: 15px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+/* 전체보기, 베스트, 신제품 - 제품정보 */
+.prod_list>ul .description {
+    margin: 0 auto;
+    padding: 25px 6px;
+    text-align: left;
+    position: relative;
+}
+.prod_list>ul .description .name a{
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #3a3a3a;
+    margin-bottom: 8px;
+}
+.prod_list>ul .description li{
+    margin-bottom: 8px;
+    text-align: left;
+}
+.prod_list>ul .description li.hashtag{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    font-size: 12px;
+    color: #12b0e0;
+}
+.prod_list>ul .description li.price{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3a3a3a;
+    text-decoration: none;
+}
+.prod_list>ul .description li.cost{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 3px;
+    color: #999;
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 400;
+}
+.prod_list>ul .description li.sale{
+    display: inline-block;
+    font-size: 18px;
+    color: #ff3d44;
+    padding-left: 3px;
+    font-weight: 400;
+}

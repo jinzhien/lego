@@ -1,0 +1,1363 @@
+/* 비주얼 섹션 */
+#visual{
+    width: 100%;
+    height: 100vh;
+}
+#visual .swiper-container{
+    width: 100%;
+    height: 100vh;
+}
+
+/* 비주얼 공통 */
+.swiper-slide .visual_txt{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.swiper-slide .txt1{
+    position: absolute;
+    left: 0; top: 250px;
+}
+.swiper-slide .txt1>p{
+    font: 60px/1.5 'S-CoreDream-2ExtraLight';
+    color: #fff;
+}
+.swiper-slide .txt2{
+    position: absolute;
+    left: 0; top: 470px;
+}
+.swiper-slide .txt2>p:nth-child(1){
+    font-size: 16px;
+    font-weight: 500; 
+    color: #fff;
+}
+.swiper-slide .txt2>p:nth-child(2){
+    font-size: 26px;
+    color: #fff;
+}
+.swiper-slide ul.button{
+    position: absolute;
+    left: 0; top: 580px;
+}
+.swiper-slide .button li{
+    display: block;
+    float: left;
+}
+.swiper-slide .button li a.btn1{
+    border: 1px solid #fff;
+    border-radius: 150px;
+    padding: 20px 45px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.swiper-slide .button li a.btn2{
+    border: 1px solid #fff;
+    border-radius: 150px;
+    padding: 20px 61px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/* 비주얼1 */
+.swiper-slide.visual1{
+    background: url(/lego/images/0_visual/visual1.png) no-repeat center;
+    background-size: cover;
+}
+.swiper-slide.visual1 .button li a:hover{
+    background-color: #fff;
+    color: #315eba;
+}
+
+/* 비주얼2 */
+.swiper-slide.visual2{
+    background: url(/lego/images/0_visual/visual2.png) no-repeat center;
+    background-size: cover;
+}
+.swiper-slide.visual2 .button li a:hover{
+    background-color: #fff;
+    color: #6ab457;
+}
+
+/* 비주얼3*/
+.swiper-slide.visual3{
+    background: url(/lego/images/0_visual/visual3.png) no-repeat center;
+    background-size: cover;
+}
+.swiper-slide.visual3 .button li a:hover{
+    background-color: #fff;
+    color: #439cf1;
+}
+
+/* 비주얼 슬라이드 버튼 */
+.main_visual .swiper-pagination-bullet{
+    margin: 10px 15px !important;
+    display: inline-block;
+    border-radius: 100%;
+}
+.main_visual .swiper-pagination-bullet::after{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 8px; left: 0;
+}
+.main_visual .swiper-pagination-bullet:nth-child(1){
+    position: relative;
+    background: transparent;
+}
+.main_visual .swiper-pagination-bullet:nth-child(1)::after{
+    content: '';
+    background: url(/lego/images/0_visual/triangle_off.png) no-repeat center;
+    background-size: cover;
+}
+.main_visual .swiper-pagination-bullet:nth-child(2){
+    position: relative;
+    background: transparent;
+}
+.main_visual .swiper-pagination-bullet:nth-child(2)::after{
+    content: '';
+    background: url(/lego/images/0_visual/circle_off.png) no-repeat center;
+    background-size: cover;
+}
+.main_visual .swiper-pagination-bullet:nth-child(3){
+    position: relative;
+    background: transparent;
+}
+.main_visual .swiper-pagination-bullet:nth-child(3)::after{
+    content: '';
+    background: url(/lego/images/0_visual/rectangle_off.png) no-repeat center;
+    background-size: cover;
+}
+
+/* 비주얼 슬라이드 버튼 active */
+.main_visual .swiper-pagination-bullet-active::after{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 8px; left: 0;
+}
+.main_visual .swiper-pagination-bullet-active:nth-child(1){
+    position: relative;
+    background: transparent;
+}
+.main_visual .swiper-pagination-bullet-active:nth-child(1)::after{
+    content: '';
+    background: url(/lego/images/0_visual/triangle_on.png) no-repeat center;
+    background-size: cover;
+}
+.main_visual .swiper-pagination-bullet-active:nth-child(2){
+    position: relative;
+    background: transparent;
+}
+.main_visual .swiper-pagination-bullet-active:nth-child(2)::after{
+    content: '';
+    background: url(/lego/images/0_visual/circle_on.png) no-repeat center;
+    background-size: cover;
+}
+.main_visual .swiper-pagination-bullet-active:nth-child(3){
+    position: relative;
+    background: transparent;
+}
+.main_visual .swiper-pagination-bullet-active:nth-child(3)::after{
+    content: '';
+    background: url(/lego/images/0_visual/rectangle_on.png) no-repeat center;
+    background-size: cover;
+}
+
+
+/* 콘텐츠 섹션 */
+/* sec1. 신제품 */
+.sec1{
+    width: 1280px;
+    height: 280px;
+    margin: 80px auto 0;
+    padding-bottom: 50px;
+    position: relative;
+}
+.new_title{
+    width: 320px;
+    height: 220px;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+.new_title h2{
+    font: 52px 'TmoneyRoundWindExtraBold';
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    position: relative;
+}
+.new_title .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff3d44;
+    text-indent: -9999px;
+    position: relative;
+    top: 50px;
+    left: 10px
+}
+.new_title p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #9a9a9a;
+    margin-bottom: 30px;
+}
+.new_title a{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3a3a3a;
+    padding-right: 33px;
+    transition: all 0.3s;
+}
+.new_title img.off{
+    display: inline-block;
+    margin: 0 0 -4px 7px;
+}
+.new_title img.on{
+    display: none;
+    margin: 0 0 -4px 7px;
+}
+
+/*  신제품 보러가기 버튼 마우스 오버 */
+.new_title a:hover{
+    color: #ff3d44;
+    transition: all 0.3s;
+}
+.new_title a:hover img.on{
+    display: inline-block;
+    transition: all 0.3s;
+}
+.new_title a:hover img.off{
+    display: none;
+}
+
+/*  신제품 슬라이드 */
+.sec1 .swiper-container{
+    width: 215px;
+    height: 215px;
+    overflow: visible;
+    float: left;
+}
+.sec1 .swiper-wrapper{
+    width: 215px;
+    height: 215px;
+}
+.sec1 .swiper-slide{
+    width: 215px;
+    height: 215px;
+    position: relative;
+    margin-right: 25px;
+}
+.sec1 .swiper-slide a{
+    display: block;
+}
+.sec1 .swiper-slide .on a{
+    display: none;
+}
+
+/* 신제품 슬라이드 마우스오버 */
+.sec1 .swiper-slide:hover .on{
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0; left: 0;
+    display: table;
+}
+.sec1 .swiper-slide:hover .on a{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+/* 신제품 - 스크롤바 */
+.sec1 .swiper-scrollbar{
+    width: 1280px;
+    height: 1px;
+    margin: 0 auto;
+    background: #e5e5e5;
+    border-radius: 0;
+    position: absolute;
+    left: -320px; bottom: -100px;
+}
+.sec1 .swiper-scrollbar-drag{
+    height: 3px;
+    background: #ff3d44;
+    border-radius: 0;
+    position: relative;
+    left: 0; top: -2px;
+} 
+.sec1 .swiper_bg{
+    width: 640px;
+    height: 220px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;  left: -446%;
+    z-index: 1;
+}
+
+
+/* sec2. 베스트제품 */
+.sec2{
+    width: 1280px;
+    margin: 100px auto 100px;
+    text-align: center;
+}
+
+/* 베스트 타이틀 */
+.best_title{
+    margin-bottom: 70px;
+}
+.best_title h2{
+    font: 52px 'TmoneyRoundWindExtraBold';
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    position: relative;
+}
+.best_title .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff3d44;
+    text-indent: -9999px;
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+.best_title p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #9a9a9a;
+    margin-bottom: 20px;
+}
+.best_title a{
+    font-weight: 500;
+    font-size:  18px;
+    color: #3a3a3a;
+}
+.best_title img.off{
+    display: inline-block;
+    margin: 0 0 -4px 7px;
+}
+.best_title img.on{
+    display: none;
+    margin: 0 0 -4px 7px;
+}
+
+/* 레고 랭킹 보러가기 마우스 오버 */
+.best_title a:hover{
+    color: #ff3d44;
+    transition: all 0.3s;
+}
+.best_title a:hover img.on{
+    display: inline-block;
+    transition: all 0.3s;
+}
+.best_title a:hover img.off{
+    display: none;
+}
+
+/* 베스트 제품칸 */
+ul.best_prod{
+    display: table;
+    width: 100%;
+    font-size: 0;
+    position: relative;
+}
+.best_prod>li{
+    width: 25%;
+    display: inline-block;
+    margin: 0 0 60px;
+    color: #757575;
+    position: relative;
+}
+.best_prod>li .box {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.best_prod .thumbnail {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+.best_prod .thumbnail .new_btn{
+    position: absolute;
+    top: 15px; left: 15px;
+}
+.best_prod .thumbnail .num{
+    position: absolute;
+    top: -1px; right: -2px;    
+    width: 66px;
+    height: 63px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #3a3a3a;
+    z-index: 1;
+    text-align: center;
+    padding-top: 10px;
+    background: url(/lego/images/2_best/best_num_bg.png) no-repeat;
+}
+.best_prod .thumbnail .icon_cart a{
+    display: block;
+    position: absolute;
+    bottom: 15px; right: 15px;
+    z-index: 8;
+    background: url(/lego/images/2_best/best_cart_off.png) no-repeat;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999px;
+}
+.best_prod .thumbnail .prod_img{
+    overflow: hidden;
+}
+.best_prod .thumbnail .prod_img img{
+    width: 100%;
+    border: 0;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+/* 슈퍼마리오 캐릭터 */
+.best_prod .thumbnail .prod_img .bg_img{
+    position: absolute;
+    top: 15px; left: -8px;
+    background: url(/lego/images/2_best/best2_.png) no-repeat left bottom;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    text-indent: -9999px;
+}
+
+/* 베스트 제품 정보 */
+.best_prod .description {
+    margin: 0 auto;
+    padding: 25px 6px;
+    text-align: left;
+    position: relative;
+}
+.best_prod .description .name a{
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #3a3a3a;
+    margin-bottom: 8px;
+}
+.best_prod .description li{
+    margin-bottom: 8px;
+    text-align: left;
+}
+.best_prod .description li.hashtag{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    font-size: 12px;
+    color: #12b0e0;
+}
+.best_prod .description li.price{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3a3a3a;
+    text-decoration: none;
+}
+.best_prod .description li.cost{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 3px;
+    color: #999;
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 400;
+}
+.best_prod .description li.sale{
+    display: inline-block;
+    font-size: 18px;
+    color: #ff3d44;
+    padding-left: 3px;
+    font-weight: 400;
+}
+
+/* 베스트 마우스오버 */
+.thumbnail:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: block;
+    background-color: rgba(0,0,0,.2);
+}
+.thumbnail:hover .prod_img img{
+    transform: scale(1.2);
+}
+.best_prod .thumbnail .icon_cart a:hover {
+    display: block;
+    position: absolute;
+    bottom: 15px; right: 15px;
+    z-index: 8;
+    background: url(/lego/images/2_best/best_cart_on.png) no-repeat;
+    width: 85px;
+    height: 38px;
+    transition: all 0.2s;
+}
+
+
+/* sec3. 찾아드릴게요 */
+.sec3{
+    width: 100%;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+/* 타이틀 */
+.find_title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.find_title h2{
+    font: 52px 'TmoneyRoundWindExtraBold';
+    color: #1a1a1a;
+    margin-bottom: 23px;
+    position: relative;
+}
+.find_title .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff3d44;
+    text-indent: -9999px;
+    position: relative;
+    top: 45px;
+    left: 10px;
+}
+
+/* step 01, 02, 03 */
+.find_curation{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.find_curation ul.step{
+    text-align: center;
+}
+.find_curation ul.step li.on{
+    color: #3a3a3a;
+}
+.find_curation ul.step li{
+    color: #9a9a9a;
+    font-size: 40px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.find_curation ul.step li.on::before{
+    content: 'STEP';
+    margin: 0 10px 0 0;
+}
+.find_curation ul.step li.on::after{
+    content: '-';
+    margin: 0 0 0 20px;
+}
+.find_curation ul.step li.on[data-tab="tab03"]::after {
+    content: "";
+    margin: 0 0 0 10px;
+}
+.find_curation .stepbox{
+    text-align: center;
+    margin: 31px auto 40px;
+    font-size: 0;
+    display: none;
+}
+.find_curation .stepbox.on{
+    display: block;
+}
+.find_curation .stepbox .question {
+    color: #3a3a3a;
+    font: 40px 'Noto Sans KR', sans-serif;
+    margin: 0 auto 30px;
+}
+
+/* 선택 박스 */
+.find_curation .stepbox input {
+    display: none;
+}
+.find_curation .stepbox label{
+    text-align: center;
+    margin: 0 10px;
+    display: inline-block;
+    font: 18px 'Noto Sans KR', sans-serif;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f3b023;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+input[type=radio]{
+    width: 13px;
+    height: 13px;
+    border: 0;
+}
+
+/* 마우스 오버 */
+.find_curation .stepbox label:hover{
+    background-color: #ea624c;
+}
+
+/* 레고 블럭 */
+.lego01{
+    display: block;
+    width: 147px;
+    height: 132px;
+    background: url(/lego/images/3_find/lego_green.png) no-repeat center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-indent: -9999px;
+}
+.lego02{
+    display: block;
+    width: 115px;
+    height: 89px;
+    background: url(/lego/images/3_find/lego_yellow.png) no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 70px;
+    text-indent: -9999px;
+}
+.lego03{
+    display: block;
+    width: 98px;
+    height: 100px;
+    background: url(/lego/images/3_find/lego_red.png) no-repeat center center;
+    position: absolute;
+    bottom: 150px;
+    right: 250px;
+    text-indent: -9999px;
+}
+
+/* 레고블럭 애니메이션*/
+/* 애니메이션 축약형 : name duration timing-function delay iteration-count  direction; */
+.bounce{
+    -webkit-animation: bounce 1.5s linear 1s infinite alternate; 
+    animation: bounce 1.5s linear 1s infinite alternate;
+}
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes bounce {
+    0% {opacity: 1.0; top:5px;}
+    50% {opacity: 1.0; top:20px;}
+    100% {opacity: 1.0; top:0px;}
+}
+  /* Standard syntax */
+@keyframes bounce {
+    0% {opacity: 1.0; top:5px;}
+    50% {opacity: 1.0; top:20px;}
+    100% {opacity: 1.0; top:0px;}
+}
+.bounce2{
+    -webkit-animation: bounce2 1.3s linear infinite alternate; 
+    animation: bounce2 1.3s linear infinite alternate;
+}
+@-webkit-keyframes bounce2 {
+    0% {opacity: 1.0; right: 70px;}
+    50% {opacity: 1.0; right: 90px;}
+    100% {opacity: 1.0; right: 70px;}
+}
+@keyframes bounce2 {
+    0% {opacity: 1.0; right: 70px;}
+    50% {opacity: 1.0; right : 90px;}
+    100% {opacity: 1.0; right: 70px;}
+}
+.pulsate-bck {
+	-webkit-animation: pulsate-bck 1.3s ease-in-out infinite both;
+	animation: pulsate-bck 1.3s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-bck {
+    0% { -webkit-transform: scale(1); transform: scale(1);}
+    50% {-webkit-transform: scale(0.9); transform: scale(0.9);}
+    100% {-webkit-transform: scale(1); transform: scale(1);}
+}
+@keyframes pulsate-bck {
+    0% {-webkit-transform: scale(1); transform: scale(1);}
+    50% {-webkit-transform: scale(0.9); transform: scale(0.9);}
+    100% {-webkit-transform: scale(1); transform: scale(1);}
+}
+  
+/* 레고배경 */
+.legobg{
+    display: block;
+    width: 100%;
+    height: 266px;
+    background: url(/lego/images/3_find/legoman.png) no-repeat center center;
+    position: relative;
+    margin: 80px auto 0;
+    text-indent: -9999px;
+}
+
+
+/* sec4. 레고티비 */
+.sec4{
+    height: 750px;
+    margin: 0 auto 0;
+    background-color: #f1f1f1;
+}
+.lego_tv{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 텍스트 고정영역 */
+.tv_txt{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 130px; left: 0;
+    overflow: hidden;
+}
+.main_title{
+    position: absolute;
+    top: 20px;
+    z-index: 6;
+}
+.main_title h2{
+    font: 52px 'TmoneyRoundWindExtraBold';
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    position: relative;
+}
+.main_title .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff3d44;
+    text-indent: -9999px;
+    position: relative;
+    top: 45px;
+    left: 10px;
+}
+.main_title p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #9a9a9a;
+    margin-bottom: 10px;
+}
+
+/* 슬라이드 */
+.sec4 .swiper-container.tv_slide{
+    width: 1280px;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 70px;
+/*     overflow: visible; */
+}
+.sec4 .swiper-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.sec4 .swiper-slide{
+    width: 100%;
+    position: relative;
+}
+
+/* 슬라이드 텍스트 영역 */
+.sec4 .swiper-slide .slide_txt{
+    float: left;
+    width: 400px;
+    height: 600px;
+    padding-top: 50px;
+    transition: all 0.5s, opacity 0.3s;
+}
+.slide_txt h3{
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #3a3a3a;
+    margin-top: 190px;
+    word-break: keep-all;
+}
+.slide_txt p{
+    font-size: 18px;
+    color: #9a9a9a;
+    margin-top: 20px;
+    word-break: keep-all;
+}
+.slide_txt .slide_link{
+    margin-top: 50px;
+}
+.slide_txt .slide_link>a{
+    display: block;
+    width: 188px;
+    height: 60px;
+    z-index: 20;
+    background: url(/lego/images/4_legotv/youtube_btn_off.png) no-repeat left bottom;
+    text-indent: -9999px;
+}
+.swiper-slide-active .slide_txt .slide_link:hover>a{
+    display: block;
+    width: 188px;
+    height: 60px;
+    z-index: 20;
+    background: url(/lego/images/4_legotv/youtube_btn_on.png) no-repeat left bottom;
+    text-indent: -9999px;
+}
+
+/* 영상부분 */
+.sec4 .swiper-slide .slide_video{
+    float: right;
+    width: 880px;
+}
+.sec4 .swiper-slide .slide_video video{
+    overflow: visible;
+    border-radius: 60px;
+    transition: all 0.5s;
+    outline: none;
+    border: none;
+    margin-top: 50px;
+    box-shadow: 5px 5px 18px #a8a8a8;
+}
+
+/* 텍스트 안보이게 박스로 덮기 */
+.swiper_tvbg_left{
+    width: 600px;
+    height: 750px;
+    background-color: #f1f1f1;
+    position: relative;
+    top: -820px;
+    left: -600px;
+    z-index: 20;
+    text-indent: -9999px;
+}
+.swiper_tvbg_right{
+    width: 400px;
+    height: 750px;
+    background-color: #f1f1f1;
+    position: relative;
+    top: -1570px;
+    left: 1280px;
+    z-index: 20;
+    text-indent: -9999px;
+}
+
+/* 레고티비 슬라이드 버튼 */
+.sec4 .swiper-container-horizontal>.swiper-pagination-bullets{
+    bottom: 100px;
+    left: 190px;
+    width: 100%;
+}
+.sec4 .swiper-pagination-bullet{
+    margin: 12px !important;
+    display: inline-block;
+    position: absolute;
+    transition: .3s;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+.sec4 .swiper-pagination-bullet::after{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 8px; left: 0;
+}
+.sec4 .swiper-pagination-bullet:nth-child(3n+1){
+    position: relative;
+    background: transparent;
+}
+.sec4 .swiper-pagination-bullet:nth-child(3n+1)::after{
+    content: '';
+    background: url(/lego/images/4_legotv/triangle_off.png) no-repeat center;
+    background-size: cover;
+}
+.sec4 .swiper-pagination-bullet:nth-child(3n+2){
+    position: relative;
+    background: transparent;
+}
+.sec4 .swiper-pagination-bullet:nth-child(3n+2)::after{
+    content: '';
+    background: url(/lego/images/4_legotv/circle_off.png) no-repeat center;
+    background-size: cover;
+}
+.sec4 .swiper-pagination-bullet:nth-child(3n+3){
+    position: relative;
+    background: transparent;
+}
+.sec4 .swiper-pagination-bullet:nth-child(3n+3)::after{
+    content: '';
+    background: url(/lego/images/4_legotv/rectangle_off.png) no-repeat center;
+    background-size: cover;
+}
+
+/* 비주얼 슬라이드 버튼 active */
+.sec4 .swiper-pagination-bullet-active::after{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 8px; left: 0;
+}
+.sec4 .swiper-pagination-bullet-active:nth-child(3n+1){
+    position: relative;
+    background: transparent;
+}
+.sec4 .swiper-pagination-bullet-active:nth-child(3n+1)::after{
+    content: '';
+    background: url(/lego/images/4_legotv/triangle_on.png) no-repeat center;
+    background-size: cover;
+}
+.sec4 .swiper-pagination-bullet-active:nth-child(3n+2){
+    position: relative;
+    background: transparent;
+}
+.sec4 .swiper-pagination-bullet-active:nth-child(3n+2)::after{
+    content: '';
+    background: url(/lego/images/4_legotv/circle_on.png) no-repeat center;
+    background-size: cover;
+}
+.sec4 .swiper-pagination-bullet-active:nth-child(3n+3){
+    position: relative;
+    background: transparent;
+}
+.sec4 .swiper-pagination-bullet-active:nth-child(3n+3)::after{
+    content: '';
+    background: url(/lego/images/4_legotv/rectangle_on.png) no-repeat center;
+    background-size: cover;
+}
+
+
+/* sec5. 미니피겨 */
+.sec5{
+    width: 100%;
+    height: 850px;
+    margin: 100px auto 100px;
+    text-align: center;
+    position: relative;
+}
+.figure_title h2{
+    font: 52px 'TmoneyRoundWindExtraBold';
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    position: relative;
+}
+.figure_title .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff3d44;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50px;
+    left: 59.2%;
+}
+.figure_title p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #9a9a9a;
+    margin-bottom: 20px;
+}
+.figure_title_btn a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3a3a3a;
+    transition: all 0.3s;
+}
+.figure_title_btn img.off{
+    display: inline-block;
+    margin: 0 0 -4px 7px;
+}
+.figure_title_btn img.on{
+    display: none;
+    margin: 0 0 -4px 7px;
+}
+.figure_title_btn a:hover{
+    color: #ff3d44;
+    transition: all 0.3s;
+}
+.figure_title_btn a:hover img.on{
+    display: inline-block;
+    transition: all 0.3s;
+}
+.figure_title_btn a:hover img.off{
+    display: none;
+}
+
+/* 미니피겨 슬라이드 */
+.sec5 .swiper-container{
+    width: 350px;
+    overflow: visible;
+    padding: 70px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    z-index: 1;
+}
+.sec5 .swiper-wrapper{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    z-index: 1;
+    display: flex;
+    transition-property: all;
+    box-sizing: content-box;
+}
+.sec5 .swiper-slide{
+    width: 390px;
+    font-size: 0;
+    text-align: center;
+    transition: all 0.5s;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 30px;
+}
+.sec5 .swiper-slide a img{
+    border-radius: 60px;
+    transition: all 0.3s;
+    width: 350px;
+    height: auto;
+    float: left;
+}
+.sec5 .swiper-slide .figure_txt{
+    margin-top: 40px;
+    text-align: center;
+    transition: all 0.3s;
+    display: none;
+}
+.swiper-slide .figure_txt h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: #3a3a3a;
+    line-height: 35px;
+    margin-top: 40px;
+}
+.swiper-slide .figure_txt p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #9a9a9a;
+    line-height: 28px;
+    margin-top: 15px;
+}
+
+/* slide-active일때 효과 */
+.sec5 .swiper-slide-active{
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    box-shadow: 3px 3px 18px #a8a8a8;
+    outline: none;
+    border: none;
+    transition: none;
+    transform: scale(1.15);
+}
+.sec5 .swiper-slide-active .figure_txt{
+    margin-top: 40px;
+    display: block;
+}
+
+/* 미니피겨 스크롤바 */
+.mini_figure .swiper-scrollbar{
+    width: 1280px;
+    height: 1px;
+    border-radius: 0;
+    position: absolute;
+    left: -414px; bottom: -180px; right: 0;
+    margin: 0 auto;
+    background: #e5e5e5;
+    z-index: 50;
+}
+.mini_figure .swiper-scrollbar-drag{
+    width: 100%;
+    position: relative;
+    background: #ff3d44;
+    border-radius: 0;
+    left: 0;
+    top: -2px;
+    height: 3px;
+} 
+
+
+/* sec6. 추천시리즈 */
+.sec6{
+    width: 100%;
+    height: 1000px;
+    margin: 70px auto 10px;
+    position: relative;
+    text-align: center;
+}
+
+/* 추천시리즈 타이틀 */
+.series_title h2{
+    font: 52px 'TmoneyRoundWindExtraBold';
+    color: #1a1a1a;
+    margin: 15px 0 20px 0;
+    position: relative;
+}
+.series_title .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff3d44;
+    text-indent: -9999px;
+    position: relative;
+    top: 44px;
+    left: 10px;
+}
+
+/* 추천시리즈 제품  */
+.series_box{
+    width: 100%;
+    height: 680px;
+    background-color: #f3f1eb;
+    overflow: hidden;
+    position: relative;
+}
+.series_box::before {
+    left: 0;
+    background: linear-gradient(to right,#f3f1eb 0%,transparent 30%);
+}
+.series_box::after {
+    right: 0;
+    background: linear-gradient(to left,#f3f1eb 0%,transparent 30%);
+}
+.series_bg{
+    width: 100%;
+    height: 680px;
+    background-color: #f3f1eb;
+    overflow: hidden;
+    position: relative
+}
+.series_bg::before{
+    content: "";
+    background: url(/lego/images/6_series/bg_top.png) repeat-x center top;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    height: 141px;
+    left: 0;
+    right: 0;
+}
+.series_bg::after {
+    content: "";
+    background: url(/lego/images/6_series/bg_bottom.png) repeat-x center bottom;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    height: 141px;
+    left: 0;
+    right: 0;
+} 
+
+/* 이미지 흐르는 효과 */
+.series_marquee{
+    margin-right: 0px;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee-inner {
+    display: block;
+    width: 200%;
+    margin: 70px 0;
+    position: absolute;
+    animation: marquee 20s linear infinite;
+}
+.marquee-inner:hover {
+    animation-play-state: paused;
+}
+@-moz-keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+@-webkit-keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+.series_marquee img{
+    display: inline-block;
+    z-index: 12;
+    width: 540px;
+    height: 540px;
+    cursor: pointer;
+}
+.series_marquee img:nth-child(6n+1){
+    transform: rotate(20deg);
+}
+.series_marquee img:nth-child(6n+2) {
+    transform: rotate(-20deg);
+}
+.series_marquee img:nth-child(6n+3) {
+    transform: rotate(20deg);
+}
+.series_marquee img:nth-child(6n+4) {
+    transform: rotate(-20deg);
+}
+.series_marquee img:nth-child(6n+5) {
+    transform: rotate(20deg);
+}
+.series_marquee img:nth-child(6n+6) {
+    transform: rotate(-20deg);
+}
+
+/* 추천시리즈 하단 텍스트 */
+.sec6 .series_txt{
+    width: 1280px;
+    margin: 30px auto;
+}
+.series_txt h3{
+    display: block;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    color: #3a3a3a;
+    margin-top: 30px;
+}
+.series_txt p{
+    font-size: 18px;
+    line-height: 1.3;
+    color: #9a9a9a;
+    margin-top: 10px;
+}
+.series_txt .series_btn{
+    margin-top: 40px;
+}
+
+
+/* sec7. 인스타 */
+.sec7{
+    width: 1280px;
+    height: 600px;
+    margin: 120px auto;
+    margin-bottom: 100px;
+}
+.insta_title{
+    margin-top: 20px;
+    text-align: center;
+}
+.insta1 h2{
+    font: 52px 'TmoneyRoundWindExtraBold';
+    color: #1a1a1a;
+    margin-top: 20px;
+}
+.insta1 .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff3d44;
+    text-indent: -9999px;
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+.insta2{
+    margin-top: 10px;
+}
+.insta2 a{
+    font-size: 18px;
+    color: #9a9a9a;
+}
+.insta_img{
+    margin-top: 40px;
+}
+.insta_img ul{
+    width: 1280px;
+    height: 420px;
+}
+
+.insta_img ul li{
+    float: left;
+    margin-right: 10px;
+    margin-top: 7px;
+    position: relative;
+}
+.insta_img ul li:nth-child(6n+1){
+    margin-left: 15px;
+}
+.insta_img ul li .img img{
+    width: 200px;
+    height: 200px;
+}
+.insta_img ul li .over img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+
+/* 인스타그램 아이콘 */
+.insta_img ul li:nth-child(7) .icon_v{
+    position: absolute;
+    top: 7px; left: 7px;
+}
+.insta_img ul li:nth-child(8) .icon_v{
+    position: absolute;
+    top: 7px; left: 7px;
+}
+.insta_img ul li:nth-child(1) .icon_p{
+    position: absolute;
+    top: 7px; left: 7px;
+}
+.insta_img ul li:nth-child(4) .icon_p{
+    position: absolute;
+    top: 7px; left: 7px;
+}
+.insta_img ul li:nth-child(5) .icon_p{
+    position: absolute;
+    top: 7px; left: 7px;
+}
+.insta_img ul li:nth-child(9) .icon_p{
+    position: absolute;
+    top: 7px; left: 7px;
+}
+
+/* 인스타 아이콘 */
+.insta_img ul li>img.icon_p{
+    width: 21px;
+    height: 21px
+}
+.insta_img ul li>img.icon_v{
+    width: 25px;
+    height: 19px
+}
+
+/* 인스타 마우스오버 */
+.insta_img ul li:hover .over img{
+    display: block;
+}
+
+
